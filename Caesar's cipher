@@ -1,0 +1,18 @@
+n, s = int(input()), input()
+
+for i in s: #coder
+    num = ord(i) - n
+    if num < 97:
+        alg = 122 - (n - (ord(i) - 96))
+        print(chr(alg), end='')
+    else:
+        print(chr(num), end='')
+'''
+for i in s: # decoder
+    num = ord(i) + n
+    if num > 122:
+        alg = 123 - (n - (ord(i) - 122))
+        print(chr(alg), end='')
+    else:
+        print(chr(num), end='')
+'''
